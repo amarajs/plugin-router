@@ -1,4 +1,4 @@
-## @amarajs/plugin-router
+## [@amarajs/plugin-router](https://github.com/amarajs/plugin-router)
 
 Provides client-side routing functionality to AmaraJS projects.
 
@@ -50,7 +50,7 @@ https://www.mysite.com/#!main://posts/15?comments
 
 ### Targeting Routes for Features
 
-This plugin adds a `"route"` attribute to any nodes that have an active route applied. You can use this attribute to add features that target specific routes. For example, to add some content to a help container which has been routed to a `"topics/login"` page, you could use the `@amarajs/plugin-dom` middleware:
+This plugin adds a `"route"` attribute to any nodes that have an active route applied. You can use this attribute to add features that target specific routes. For example, to add some content to a help container which has been routed to a `"topics/login"` page, you could use the [`@amarajs/plugin-dom`](https://github.com/amarajs/plugin-dom) middleware:
 
 ```javascript
 amara.add({
@@ -99,7 +99,7 @@ target | `String` | `true` | A selector that identifies one or more targets of `
 route | `String` | `true` | The route path to navigate to.
 params | `Object` | `false` | Any parameters you want to encode as a querystring for the route path.
 
-For example, if you're using the `@amarajs/plugin-events` middleware, you can dispatch a route change from an event handler, because the action will bubble up to the bootstrapped node and be passed to all your registered middleware, including `@amarajs/plugin-router`:
+For example, if you're using the [`@amarajs/plugin-events`](https://github.com/amarajs/plugin-events) middleware, you can dispatch a route change from an event handler, because the action will bubble up to the bootstrapped node and be passed to all your registered middleware, including `@amarajs/plugin-router`:
 
 ```javascript
 amara.add({
@@ -197,7 +197,7 @@ https://www.mysite.com/#!main--posts~~#help--topics/posts?open
 
 If you have a feature request, please create a new issue so the community can discuss it.
 
-If you find a defect, please submit a bug report that includes a working link to reproduce the problem (for example, using [jsBin](https://jsbin.com)). Of course, pull requests to fix open issues are always welcome!
+If you find a defect, please submit a bug report that includes a working link to reproduce the problem (for example, using [this fiddle](https://jsfiddle.net/04f3v2x4/)). Of course, pull requests to fix open issues are always welcome!
 
 ### License
 
